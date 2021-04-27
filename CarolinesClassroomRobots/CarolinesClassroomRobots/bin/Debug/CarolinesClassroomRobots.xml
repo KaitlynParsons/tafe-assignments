@@ -1,0 +1,313 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CarolinesClassroomRobots</name>
+    </assembly>
+    <members>
+        <member name="M:CarolinesClassroomRobots.Form1.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.disableButtons">
+            <summary>
+            disables the sort and find buttons until a csv file is opened
+            </summary>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.buttonExit_Click(System.Object,System.EventArgs)">
+            <summary>
+            Closes the form
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.buttonRAF_Click(System.Object,System.EventArgs)">
+            <summary>
+            reads a Random Access File
+            /// </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.openFileDialog">
+            <summary>
+            this method creates an opens a file dialog of only csv files
+            </summary>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.buttonSave_Click(System.Object,System.EventArgs)">
+            <summary>
+            Saves current as csv file
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.saveFileDialog">
+            <summary>
+            this method creates a save file dialog of a csv file
+            </summary>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.binarySearch">
+            <summary>
+            this method conducts a binary search on the students names once they're added to the list and sorted
+            </summary>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.writeToFile(System.String,CarolinesClassroomRobots.Student,System.Int32,System.Int32)">
+            <summary>
+            Write to Random Access File
+            </summary>
+            <param name="filename"></param>
+            <param name="obj"></param>
+            <param name="pos"></param>
+            <param name="size"></param>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.readFromFile(System.String)">
+            <summary>
+            reads from Random Access File
+            </summary>
+            <param name="filename"></param>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.addrecord">
+            <summary>
+            add student list to Random Access File
+            </summary>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.findFromFile(System.String,System.Int32)">
+            <summary>
+            finds index in Random Access File
+            </summary>
+            <param name="filename"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.addStudentNamesToList">
+            <summary>
+            adds the student names to a list
+            </summary>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.addClassroomToList">
+            <summary>
+            adds the classroom to a list
+            </summary>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.classroomDetails">
+            <summary>
+            adds the classroom details to a list
+            </summary>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.buttonFind_Click(System.Object,System.EventArgs)">
+            <summary>
+            Finds user entered name
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.search">
+            <summary>
+            searches the datagrid for a student and highlights their cell, opens student list and highlights row
+            </summary>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.hightlightCell(System.String)">
+            <summary>
+            this method hightlights a cell in the datagridview depending on the search value
+            </summary>
+            <param name="searchValue"></param>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.buttonSort_Click(System.Object,System.EventArgs)">
+            <summary>
+            gets the cell values and locations of datagrid, displays them in a new form 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.buttonClear_Click(System.Object,System.EventArgs)">
+            <summary>
+            clears the grid and textboxes
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.clearStudents">
+            <summary>
+            clears the classroom details and grid
+            </summary>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.clearDetails">
+            <summary>
+            clear classroom details and set date picker to current date
+            </summary>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.setRowNumber(System.Windows.Forms.DataGridView)">
+            <summary>
+            sets the row header cell to display row number starting from 0
+            </summary>
+            <param name="dgv"></param>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.Form1_Load(System.Object,System.EventArgs)">
+            <summary>
+            add rows to the datagrid when form loads
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.displayAllData">
+            <summary>
+            display all the data for the classroom in the textboxes and grid
+            </summary>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.populateGrid(System.String)">
+            <summary>
+            populates the grid depending on file path
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.displayLine(System.Int32)">
+            <summary>
+            display the line in the arrayList
+            </summary>
+            <param name="lineNum"></param>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.dataGridClassroom_MouseClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            when right mouse button is clicked shows context menu
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.AddDesk_Click(System.Object,System.EventArgs)">
+            <summary>
+            sets a cell to a desk
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.ClearCell_Click(System.Object,System.EventArgs)">
+            <summary>
+            clears the cell
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.EditCell_Click(System.Object,System.EventArgs)">
+            <summary>
+            edit the cell
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.buttonOpen_Click(System.Object,System.EventArgs)">
+            <summary>
+            Opens a csv file
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:CarolinesClassroomRobots.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form2.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form2.#ctor(System.Collections.Generic.List{System.String})">
+            <summary>
+            constructor with list
+            </summary>
+            <param name="stringList"></param>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form2.Form2_Load(System.Object,System.EventArgs)">
+            <summary>
+            when the form loads, calls addListToDataGrid method and sets heads to blue
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form2.addListToDataGrid">
+            <summary>
+            adds the list to the grid
+            </summary>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form2.highlightRow(System.String)">
+            <summary>
+            highlights the given row
+            </summary>
+            <param name="searchValue"></param>
+        </member>
+        <member name="F:CarolinesClassroomRobots.Form2.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form2.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Form2.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:CarolinesClassroomRobots.Student">
+            <summary>
+            <see cref="T:CarolinesClassroomRobots.Student"/> Class
+            </summary>
+        </member>
+        <member name="P:CarolinesClassroomRobots.Student.stunumber">
+            <summary>
+            string for students number in the raf
+            </summary>
+        </member>
+        <member name="P:CarolinesClassroomRobots.Student.stuname">
+            <summary>
+            string for students name in the raf
+            </summary>
+        </member>
+        <member name="P:CarolinesClassroomRobots.Student.size">
+            <summary>
+            int for size of raf
+            </summary>
+        </member>
+        <member name="M:CarolinesClassroomRobots.Student.calsize">
+            <summary>
+            max record of raf
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CarolinesClassroomRobots.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:CarolinesClassroomRobots.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:CarolinesClassroomRobots.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

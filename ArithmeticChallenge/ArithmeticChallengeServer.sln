@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArithmeticChallengeServer", "ArithmeticChallengeServer\ArithmeticChallengeServer.csproj", "{BE569852-74D2-45CA-9226-9C087231054D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE569852-74D2-45CA-9226-9C087231054D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE569852-74D2-45CA-9226-9C087231054D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE569852-74D2-45CA-9226-9C087231054D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE569852-74D2-45CA-9226-9C087231054D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F80476B-E4BE-4D28-A482-B9D8CAD78495}
+	EndGlobalSection
+EndGlobal
